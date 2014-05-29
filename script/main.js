@@ -119,10 +119,18 @@ $( document ).ready(function() {
 
     // Hide
     $('#schema').slideUp(0);
+    $('#hotels').slideUp(0);
+    $('#bookBus').slideUp(0);
 
     // Show
     $('#showSchema').click(function() {
-        $('#schema').slideToggle("slow");
+        $('#schema').slideToggle("fast");
+    });
+    $('#showHotels').click(function() {
+        $('#hotels').slideToggle("fast");
+    });
+    $('#showBookBus').click(function() {
+        $('#bookBus').slideToggle("fast");
     });
 
     // Initialize the map
