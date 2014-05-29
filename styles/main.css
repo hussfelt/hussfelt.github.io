@@ -1,3 +1,11 @@
+body {
+  font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 2.3em;
+}
 #map { 
   height: 100%; 
   width: 100%; 
@@ -14,15 +22,16 @@
   width: 600px;
   margin: 20px 20px 0;
   padding: 10px;
-  background: black;
+  background: #FFF;
   height: auto;
-  opacity: .9;
-  color: #FFF;
+  opacity: .8;
+  color: #333;
 }
+
 
 #image {
   background: url('/images/karina_henrik.jpg');
   width: 600px;
-  height: 150px;
+  height: 190px;
   background-size: 100% auto;
 }
