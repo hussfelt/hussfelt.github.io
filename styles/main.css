@@ -1,0 +1,28 @@
+#map { 
+  height: 100%; 
+  width: 100%; 
+  position:absolute; 
+  top: 0; 
+  left: 0; 
+  z-index: 0;
+}
+ 
+#wrapper { 
+  position: relative; 
+  z-index: 1;
+  float: right;
+  width: 600px;
+  margin: 20px 20px 0;
+  padding: 10px;
+  background: black;
+  height: auto;
+  opacity: .9;
+  color: #FFF;
+}
+
+#image {
+  background: url('/images/karina_henrik.jpg');
+  width: 600px;
+  height: 150px;
+  background-size: 100% auto;
+}
