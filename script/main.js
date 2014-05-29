@@ -59,7 +59,7 @@ var WeddingClass = {
         this.directionsDisplay.setMap(this.map);
 
         // Drop markers
-        this.dropMarkers();
+        //this.dropMarkers();
     },
 
     // Drop markers
@@ -116,6 +116,15 @@ var WeddingClass = {
 
 // When document is ready, run map
 $( document ).ready(function() {
+
+    // Hide
+    $('#schema').slideUp(0);
+
+    // Show
+    $('#showSchema').click(function() {
+        $('#schema').slideToggle("slow");
+    });
+
     // Initialize the map
     WeddingClass.initialize();
 
