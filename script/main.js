@@ -59,7 +59,7 @@ var WeddingClass = {
         this.directionsDisplay.setMap(this.map);
 
         // Drop markers
-        //this.dropMarkers();
+        this.dropMarkers();
     },
 
     // Drop markers
@@ -94,7 +94,7 @@ var WeddingClass = {
     },
 
     // Calculate route from hotel to wedding
-    calcualteRouteToWedding: function () {
+    calcualteRouteWedding: function () {
 
         // Setup request
         var request = {
@@ -165,7 +165,7 @@ $( document ).ready(function() {
         // Zoom out
         WeddingClass.map.setZoom(7);
         // Move to marker after 300 ms
-        WeddingClass.calcualteRouteToWedding();
+        WeddingClass.calcualteRouteWedding();
         setTimeout("WeddingClass.map.panTo(WeddingClass.markers.hotel.getPosition())", 300);
         setTimeout("WeddingClass.map.setZoom(9)", 600);
         setTimeout("WeddingClass.map.setZoom(10)", 900);
