@@ -1,0 +1,26 @@
+---
+layout: post
+title: Round number to nearest fraction with PHP
+date: '2009-05-23T04:37:00+02:00'
+tags:
+- oldblogposts
+- php
+tumblr_url: http://hussfelt.tumblr.com/post/28547539768/round-number-to-nearest-fraction-with-php
+---
+<p>Sometimes when you are trying to code small functions you realize that some one must have done the same thing before and you realize that google is as usual your friend in need!</p>
+<p>I was trying to compile a helper function to round a float to what ever nearest fraction i needed. I found numerous examples on how to do this best while googleing.</p>
+<p>After some time I found this article on how to round in PHP. It has a function posted by &#8220;Peter&#8221; which is pretty neat, you give a number and a fraction as decimal as arguments to the function and get the number rounded to it&#8217;s nearest fraction return. Nice!</p>
+<blockquote>
+<pre>function roundToNearestFraction( $number, $fractionAsDecimal )
+{
+     $factor = 1 / $fractionAsDecimal;
+     return round( $number * $factor ) / $factor;
+}
+
+// Round to nearest fifth
+echo roundToNearestFraction( 3.78, 1/5 );
+
+// Round to nearest third
+echo roundToNearestFraction( 3.78, 1/3 );
+</pre>
+</blockquote>

@@ -1,0 +1,26 @@
+---
+layout: post
+title: Zend Model Creator version 1.1
+date: '2008-09-17T04:37:00+02:00'
+tags:
+- oldblogposts
+- labs
+- zendmodelcreator
+tumblr_url: http://hussfelt.tumblr.com/post/28547133310/zend-model-creator-version-1-1
+---
+<p>Today I finished up the first public version of Zend Model Creator (ZMC)!</p>
+<p>The ZMC is used to create nifty models for Zend Framework to fetch data from a database. Instead of writing these files yourself, you just specify which database you would like to use for your project. ZMC then fetches the information about these tables and creates DTOs and DAOs plus some misc files for you to use. Then its just a matter of calling the static service for each MySQL table, voiala, data is given to you directly with DTO objects for each result.</p>
+<p>Example of use:</p>
+<blockquote>
+<p>YourmysqltableService::retrieveYourmysqltables();</p>
+</blockquote>
+<p>Will return an array with a object for each result row.</p>
+<blockquote>
+<p>YourmysqltableService::retrieveYourmysqltable($primary_key);</p>
+</blockquote>
+<p>Will return a object for the given row in &#8220;Yourmysqltable&#8221; with the id contained in $primary_key.</p>
+<blockquote>
+<p>YourmysqltableService::update(YourmysqltableDTO $yourmysqltable);</p>
+</blockquote>
+<p>Will update the current row of YourmysqltableDTO&#8217;s values.</p>
+<p>More examples and a manual can be found at the <a href="https://github.com/hussfelt/Zend-Model-Creator/wiki" target="_blank">github page for Zend Model Creator!</a> I would like to thank Fredrik Hellström at Jersey Consulting AB for contributing with inspiration and the first version of the DTOCreatorService which is a part of this release.</p>

@@ -1,0 +1,15 @@
+---
+layout: post
+title: Problem with Zend Framework and MySQL Longtext and Longblob generating out
+  of memory error
+date: '2009-03-11T04:37:00+01:00'
+tags:
+- oldblogposts
+- php
+tumblr_url: http://hussfelt.tumblr.com/post/28547495302/problem-with-zend-framework-and-mysql-longtext-and
+---
+<p>I have had a bug in one of my apps for quite some time now. Trying to find the problem codewize ended up being futile. The problem occurs when trying to fetch a LONGTEXT or LONGBLOB with Zend_db Mysqli resulting in an error message like this;</p>
+<blockquote>Fatal error: Out of memory (allocated 6029312) (tried to allocate 4294967294 bytes) in /Users/hussfelt/Sites/testproject/library/Zend/Db/Statement/Mysqli.php on line 209</blockquote>
+<p><a href="http://www.google.com/search?hl=en&amp;q=out+of+memory+%22Zend%2FDb%2FStatement%2FMysqli.php%22&amp;btnG=S%C3%B6k&amp;meta=" target="_blank">After some googleing</a> I found that there was an issue in Zend Framework, that unfortunately has not been resolved yet. A ticket on this can be found over at <a href="http://framework.zend.com/issues/browse/ZF-1498" target="_blank">Zend Frameworks Issue tracker</a>.</p>
+<p>The solution is to change to using MEDIUMTEXT or MEDIUMBLOB instead which will work for systems not storing data larger then 16MB each.</p>
+<p>For those of you using more then that and need access to LONGTEXT and LONGBLOB which can store up to 4GB of data, will need to push for this at the issue tracker.</p>

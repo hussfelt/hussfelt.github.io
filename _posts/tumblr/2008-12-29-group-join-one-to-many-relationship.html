@@ -1,0 +1,90 @@
+---
+layout: post
+title: Group join one to many relationship
+date: '2008-12-29T04:37:00+01:00'
+tags:
+- oldblogposts
+- sql
+tumblr_url: http://hussfelt.tumblr.com/post/28547196244/group-join-one-to-many-relationship
+---
+<p>I have never tried to join data from a one to many relationship in one sql query, but today I needed to. Apparently there was a really easy way to do this, <a href="http://www.webmasterworld.com/forum88/2683.htm" target="_blank">which I found here</a>. Post nr #:1286020 by Coopster;</p>
+<blockquote>
+<pre>CREATE TABLE person ( 
+  id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT, 
+  name CHAR(60) NOT NULL, 
+  PRIMARY KEY (id) 
+); 
+CREATE TABLE shirt ( 
+  id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT, 
+  style ENUM('t-shirt', 'polo', 'dress') NOT NULL, 
+  color ENUM('red', 'blue', 'orange', 'white', 'black') NOT NULL, 
+  owner SMALLINT UNSIGNED NOT NULL REFERENCES person(id), 
+  PRIMARY KEY (id) 
+); 
+
+
+
+INSERT INTO person VALUES (NULL, 'Antonio Paz'); 
+
+
+
+INSERT INTO shirt VALUES 
+(NULL, 'polo', 'blue', LAST_INSERT_ID()), 
+(NULL, 'dress', 'white', LAST_INSERT_ID()), 
+(NULL, 't-shirt', 'blue', LAST_INSERT_ID()); 
+
+
+
+INSERT INTO person VALUES (NULL, 'Lilliana Angelovska'); 
+
+
+
+INSERT INTO shirt VALUES 
+(NULL, 'dress', 'orange', LAST_INSERT_ID()), 
+(NULL, 'polo', 'red', LAST_INSERT_ID()), 
+(NULL, 'dress', 'blue', LAST_INSERT_ID()), 
+(NULL, 't-shirt', 'white', LAST_INSERT_ID()); 
+
+
+
+SELECT * FROM person; 
++----+---------------------+ 
+¦ id ¦ name                ¦ 
++----+---------------------+ 
+¦  1 ¦ Antonio Paz         ¦ 
+¦  2 ¦ Lilliana Angelovska ¦ 
++----+---------------------+ 
+
+
+
+SELECT * FROM shirt; 
++----+---------+--------+-------+ 
+¦ id ¦ style   ¦ color  ¦ owner ¦ 
++----+---------+--------+-------+ 
+¦  1 ¦ polo    ¦ blue   ¦   1   ¦ 
+¦  2 ¦ dress   ¦ white  ¦   1   ¦ 
+¦  3 ¦ t-shirt ¦ blue   ¦   1   ¦ 
+¦  4 ¦ dress   ¦ orange ¦   2   ¦ 
+¦  5 ¦ polo    ¦ red    ¦   2   ¦ 
+¦  6 ¦ dress   ¦ blue   ¦   2   ¦ 
+¦  7 ¦ t-shirt ¦ white  ¦   2   ¦ 
++----+---------+--------+-------+ 
+
+
+
+SELECT name, 
+ GROUP_CONCAT(style ORDER BY style SEPARATOR " ") as styles 
+ FROM person 
+ LEFT JOIN shirt ON (person.id=shirt.owner) 
+ GROUP BY shirt.owner; 
+
+
+
++---------------------+--------------------------+ 
+¦ name                ¦ styles                   ¦ 
++---------------------+--------------------------+ 
+¦ Antonio Paz         ¦ polo t-shirt dress       ¦ 
+¦ Lilliana Angelovska ¦ polo dress t-shirt dress ¦ 
++---------------------+--------------------------+
+</pre>
+</blockquote>

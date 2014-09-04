@@ -1,15 +1,15 @@
-name: Herring Cove
-author: Herring Cove
+name: Hussfelt
+author: Henrik Hussfelt
 markdown: redcarpet
 pygments: true
-baseurl: /herring-cove
-description: theme for jekyll
-github: http://www.github.com/arnp
-twitter: http://www.twitter.com/
-facebook: http://www.facebook.com
-linkedin: http://www.linkedin.com
-email: rnpatel[at]me.com
-location: 42°2'16"N   70°12'47"W
+baseurl: 
+description: Head of Mobile, Linas Matkasse
+github: https://github.com/hussfelt
+twitter: https://twitter.com/hussfelt
+facebook: https://facebook.com/hussfelt
+linkedin: https://se.linkedin.com/in/henrikhussfelt/
+email: henrik.hussfelt[at]gmail.com
+location: 59.342262, 18.112334
 disqus: diqus-username
 
 ##Make sure to edit the above fields, especially for disqus.

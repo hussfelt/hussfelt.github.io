@@ -1,0 +1,31 @@
+---
+layout: post
+title: Remove last character from string in PHP
+date: '2009-02-24T04:37:00+01:00'
+tags:
+- oldblogposts
+- php
+tumblr_url: http://hussfelt.tumblr.com/post/28547371460/remove-last-character-from-string-in-php
+---
+<p>After looking around for a way to actually remove the last character of my string even if it was not the last one in the string given, I came up with these two ways. I figure that the one using <a href="http://se2.php.net/strrev" target="_blank">strrev()</a> is a lot faster then the one using <a href="http://se2.php.net/explode" target="_blank">explode()</a>, but as someone might want the first way, I publish it anyway.</p>
+<p>This was the way I had done to remove the last character of any given string:</p>
+<blockquote>$str = substr($str,0,strlen($str)-1);</blockquote>
+<p>This was the second thing I tried (SLOWER)</p>
+<blockquote>
+<pre>$string = "adml,madadsdsadsadasdsa,    asd";
+$string = explode(",", $string);
+array_pop($string);
+$string = implode(",", $string);
+// Will output: adml,madadsdsadsadasdsa
+echo $string;
+</pre>
+</blockquote>
+<p>This is probably one of the better way of doing it! (FASTER)</p>
+<blockquote>
+<pre>$string = "adml,madadsdsadsadasdsa,    asd";
+$string = strrev($string);
+$string substr($string,strpos($string,",")+1);
+// Will output: adml,madadsdsadsadasdsa
+echo strrev($string);
+</pre>
+</blockquote>
