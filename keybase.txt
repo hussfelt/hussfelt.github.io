@@ -1,0 +1,77 @@
+==================================================================
+https://keybase.io/hussfelt
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://hussfelt.net
+  * I am hussfelt (https://keybase.io/hussfelt) on keybase.
+  * I have a public key with fingerprint 91F4 D3C0 B19E 314F 9030  58C8 A5B9 D303 A6A9 4D1A
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.7.0"
+        },
+        "key": {
+            "fingerprint": "91f4d3c0b19e314f903058c8a5b9d303a6a94d1a",
+            "host": "keybase.io",
+            "key_id": "A5B9D303A6A94D1A",
+            "uid": "a6e9bc804de25ddcf07ca84fccb41e00",
+            "username": "hussfelt"
+        },
+        "merkle_root": {
+            "ctime": 1411453008,
+            "hash": "dd4a8ed4411f85a4674ece34c8741d835f52343a49033d7e8ca3526caddb2a65917fe4b015fc91431c75b825e2ae41cdbcdbce1cc661b4fa9ee39c83fcda7223",
+            "seqno": 55689
+        },
+        "service": {
+            "hostname": "hussfelt.net",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1411453042,
+    "expire_in": 157680000,
+    "prev": "57e930fac2ec9683f6d7cbcf92b4eb42caf7d8c2f3737f485c3e8aeeca08d323",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG/MacGPG2 v2.0.22 (Darwin)
+Comment: GPGTools - https://gpgtools.org
+
+owFdkm1sFEUYx+94qz2DqYiGFEPoGqJIc87szOzONggelFhFiDENJgS9m5dneyvX
+3XP3rrVeTtMIFj+JMeBLiKDRxhcQUBMCYlSSGiMmGOsLBvQDH3xBP6iUppoo7lRM
+kMl+mNnnN//5/+eZ7XNnZnLZVw6Pzxx9bV179vhPMtPb0RY3LBnpIaurYalKAGHN
+zELRD1aXtRmGpEggH0SLw0hD/oFk8UWm0xqAOAmiMKVQ3s0jq9lpcLPZD8I+iKtx
+YLQsD/tUE4Uk9oBg6nuIIMYVF0x6miAiHOFRjUUqWY6S2v9OtaY1i4FO/xbYKq87
+5QtOwaPduJDW6tMF4YAnFUdUg820Vj5yleDUV0pSDAgZMIH4YqRyPUl8qNSM336I
+N1egGEfRdGhVCwyCKcaUEYR46kgk5XST1lRw0DSt+JwJ6rgUFBCquEux5oT5zCaU
+CJqGI9oFrgRhtqOE1tIWDvOw6wOVCDNfeZgSrFwmuc3AFkCx0tJ8gJVyHCypLzwA
+4ilOfKWFa9skjZDAg2FkdTHmcK9plvFAoMDYNrd2Wbh8CKZF1TiqRSqqmEqtVu0y
+mWtDVUMOgiwme/8VKcog1GnPLm0qTtHL7oPanRY8VA1iKAaGYK7DUTrMOTCQajIX
+PIJ8oWxQnpO6d7SrpPI9W1KQ1FbCdzVXtk9c4vqUM0WACwAlENfk0pQ09Sn6Uskk
+6AtFrR6D1Xwie/2sTDaXmTN7hnm1mVxr239P+dBNLX+znYtOtp5bdXhuYey9N36s
+nLhw/+y/fmgURvd/dmTbq+1Hvzz9zYqj1/SU1Or3z727fNPE9wseHeyYKJ0fW5Ad
+WbtnztbVhz6dXPndLb+gKbde+v2l+tPDy/9cu/Kq3Ixl35auWLTl4Tf3H7mjdX3D
+OpG7+6Mdz24hG3dfNyFev7Xjq1OFMwvH7yo/1ejdd/XWXR9eWPP1tRs+fmb9PWef
+Pz9cWrMTHrtto3/2hZ/XtcdLth2ERnPH43fuaRmdmt87snv7238sxS09vzb4B18c
+G5v8bWnlZPfUwidvuP3KF2+cjHpaPt+ERvZ6z8WVwbfK4/LMvaI5v3z8k1n9Nz9y
+7PQ+Pm946sB9oyveObXk5WWTtO0f
+=1yUK
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/hussfelt
+
+==================================================================
