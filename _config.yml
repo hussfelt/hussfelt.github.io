@@ -1,16 +1,12 @@
-name: Hussfelt
-author: Henrik Hussfelt
-markdown: redcarpet
-pygments: true
-baseurl: 
-description: Head of Mobile, Linas Matkasse
-github: https://github.com/hussfelt
-twitter: https://twitter.com/hussfelt
-facebook: https://facebook.com/hussfelt
-linkedin: https://se.linkedin.com/in/henrikhussfelt/
-email: henrik.hussfelt@gmail.com
-location: 59.342262, 18.112334
-disqus: diqus-username
-
-##Make sure to edit the above fields, especially for disqus.
-
+title:        '@hussfelt'
+tagline:      'Home of @hussfelt'
+description:  'Head of Mobile at @LinasMatkasse. Technical startup advisor with a passion for doing the right thing.'
+url:          http://hussfelt.net
+version:      1.1.1
+author:
+  name:       'Henrik'
+  email:      'i@henrik.se'
+markdown:     rdiscount
+permalink:    pretty
+pygments:     true
+paginate:     5
