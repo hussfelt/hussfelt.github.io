@@ -8,5 +8,5 @@ author:
   email:      'i@henrik.se'
 markdown:     rdiscount
 permalink:    pretty
-pygments:     true
+highlighter:  true
 paginate:     5
