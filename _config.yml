@@ -5,7 +5,7 @@ url:          http://hussfelt.net
 version:      1.1.1
 author:
   name:       'Henrik'
-  email:      'i@henrik.se'
+  email:      'henrik@henrik.se'
 markdown:     rdiscount
 permalink:    pretty
 pygments:     true
