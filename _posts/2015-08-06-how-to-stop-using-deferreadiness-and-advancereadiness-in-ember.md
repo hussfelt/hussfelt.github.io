@@ -2,7 +2,7 @@
 layout: post
 title: How to stop using deferReadiness and advanceReadiness in Ember
 date: '2015-08-06T20:29:25+01:00'
-tags: []2
+tags: []
 ---
 
 ### Summary
