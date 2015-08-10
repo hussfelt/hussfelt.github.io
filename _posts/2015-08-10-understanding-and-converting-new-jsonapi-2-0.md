@@ -22,8 +22,7 @@ The solution is to use the new hooks described in the blog-post covering Ember D
 Below is a rough implementation where the data is converted from the old EmberData format to return the new JSONApi 2.0 format.
 The serializer-mixin also has a custom extra-hook in case you'd want to adjust the formatted json even more - in case you have side-loaded data for instance - this function is called **normalizeArrayResponseExtra**.
 
-It's still work in progress so make sure you test it properly before using in a production environment!
-
+**WARNING: It's still work in progress so make sure you test it properly before using in a production environment!**
 
 The mixin you need, including an example implementation using the **normalizeArrayResponseExtra** method.
 <script src="https://gist.github.com/hussfelt/064506796c7e94e85e47.js"></script>
