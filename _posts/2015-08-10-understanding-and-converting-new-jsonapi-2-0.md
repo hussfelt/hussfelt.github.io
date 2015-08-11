@@ -15,7 +15,7 @@ Our only option is to make sure that the old format returned from our internal A
 
 Enter Serializers!
 
-### New custom Serialier
+### New custom Serializer
 
 The solution is to use the new hooks described in the blog-post covering Ember Data 1.13.
 
