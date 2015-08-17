@@ -17,6 +17,11 @@ Enter Serializers!
 
 ### New custom Serializer
 
+#### WRONG IMPLEMENTATION! Don't use the below implementation.
+
+<a href="/2015/08/10/understanding-emberjs-and-jsonapi-2-0/">Use this solution instead!</a>
+
+<strike>
 The solution is to use the new hooks described in the blog-post covering Ember Data 1.13.
 
 Below is a rough implementation where the data is converted from the old EmberData format to return the new JSONApi 2.0 format.
@@ -25,4 +30,6 @@ The serializer-mixin also has a custom extra-hook in case you'd want to adjust t
 **WARNING: It's still work in progress so make sure you test it properly before using in a production environment!**
 
 The mixin you need, including an example implementation using the **normalizeArrayResponseExtra** method.
+</strike>
+
 <script src="https://gist.github.com/hussfelt/064506796c7e94e85e47.js"></script>
