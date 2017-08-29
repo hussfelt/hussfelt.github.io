@@ -1,6 +1,6 @@
 title:        '@hussfelt'
 tagline:      'Home of @hussfelt'
-description:  'CTO at @LinasMatkasse. Technical startup advisor with a passion for doing the right thing.'
+description:  'Autodidact technical creative geek, with a passion for doing the right thing. Technical advisor.'
 url:          http://hussfelt.net
 version:      1.1.2
 author:
@@ -9,4 +9,4 @@ author:
 markdown:     rdiscount
 permalink:    pretty
 pygments:  true
-paginate:     5
+paginate:     1
